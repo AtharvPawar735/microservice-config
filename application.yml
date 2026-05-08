@@ -7,3 +7,10 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-aprng46qpaylgsai.us.auth0.com/
+          audiences: https://my-api.com
